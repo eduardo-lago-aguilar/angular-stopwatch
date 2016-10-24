@@ -1,0 +1,21 @@
+{
+  "name": "angular-stopwatch",
+  "description": "Stopwatch service for AngularJS",
+  "main": "dist/angular-stopwatch.js",
+  "authors": [
+    "Eduardo Lago Aguilar"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "stopwatch",
+    "angularjs"
+  ],
+  "homepage": "https://github.com/eduardo-lago-aguilar/angular-stopwatch",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
