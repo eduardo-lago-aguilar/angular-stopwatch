@@ -58,7 +58,7 @@ class Stopwatch
     pause_callback @milliseconds
 
 stopwatchService = ($timeout) ->
-  get_instance = ({$timeout, delay}={$timeout: $timeout, delay: Stopwatch.default_delay}) -> new Stopwatch $timeout: $timeout, delay: delay
+  get_instance = ({timeout, delay}={timeout: $timeout, delay: Stopwatch.default_delay}) -> new Stopwatch $timeout: timeout, delay: delay
 
   @_ =
     default_delay: Stopwatch.default_delay

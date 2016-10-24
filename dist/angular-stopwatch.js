@@ -99,13 +99,13 @@ Stopwatch = (function() {
 stopwatchService = function($timeout) {
   var get_instance;
   get_instance = function(arg) {
-    var $timeout, delay, ref;
+    var delay, ref, timeout;
     ref = arg != null ? arg : {
-      $timeout: $timeout,
+      timeout: $timeout,
       delay: Stopwatch.default_delay
-    }, $timeout = ref.$timeout, delay = ref.delay;
+    }, timeout = ref.timeout, delay = ref.delay;
     return new Stopwatch({
-      $timeout: $timeout,
+      $timeout: timeout,
       delay: delay
     });
   };

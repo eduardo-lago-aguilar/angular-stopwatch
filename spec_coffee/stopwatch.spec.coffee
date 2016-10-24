@@ -9,7 +9,7 @@ describe 'Stopwatch', ->
 
   describe '#new', =>
     it 'initializes the timers', =>
-      stopwatch = @sws.get_instance $timeout: (->), delay: 1500
+      stopwatch = @sws.get_instance timeout: (->), delay: 1500
       expect(stopwatch.start_time).toBeNull()
       expect(stopwatch.end_time).toBeNull()
       expect(stopwatch.delay).toEqual 1500
@@ -50,7 +50,7 @@ describe 'Stopwatch', ->
         expect(delay).toBe stopwatch.delay
         'some timer'
 
-      stopwatch = @sws.get_instance $timeout: my_timeout
+      stopwatch = @sws.get_instance timeout: my_timeout
 
       spyOn(stopwatch, 'current_time').and.returnValue 45678
       spyOn(stopwatch, 'elapsed_time').and.returnValue 2000
@@ -123,7 +123,7 @@ describe 'Stopwatch', ->
         cancel: (running)->
           expect(running).toBe stopwatch.timer
 
-      stopwatch = @sws.get_instance $timeout: my_timeout
+      stopwatch = @sws.get_instance timeout: my_timeout
       stopwatch.timer =
         then: ->
 
