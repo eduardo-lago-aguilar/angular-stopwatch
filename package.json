@@ -1,6 +1,6 @@
 {
   "name": "angular-stopwatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stopwatch service for AngularJS",
   "scripts": {
     "build": "gulp build",
