@@ -1,7 +1,7 @@
 'use strict'
 
 class Stopwatch
-  @default_delay = 1000
+  @default_delay = 0
 
   constructor: ({$timeout, delay}) ->
     @start_time = null

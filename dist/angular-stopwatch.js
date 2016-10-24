@@ -4,7 +4,7 @@ var Stopwatch, stopwatchService,
   bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
 Stopwatch = (function() {
-  Stopwatch.default_delay = 1000;
+  Stopwatch.default_delay = 0;
 
   function Stopwatch(arg) {
     var $timeout, delay;
