@@ -1,0 +1,40 @@
+{
+  "name": "angular-stopwatch",
+  "version": "1.0.0",
+  "description": "Stopwatch service for AngularJS",
+  "scripts": {
+    "build": "gulp build",
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/eduardo-lago-aguilar/angular-stopwatch.git"
+  },
+  "keywords": [
+    "stopwatch",
+    "angularjs"
+  ],
+  "author": "Eduardo Lago Aguilar",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/eduardo-lago-aguilar/angular-stopwatch/issues"
+  },
+  "dependencies": {
+    "jasmine-matchers-loader": "^0.1.0"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "fs": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-coffeeify": "^0.1.8",
+    "gulp-concat": "^2.6.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.0",
+    "karma-coffee-preprocessor": "^1.0.0",
+    "karma-coffeelint": "0.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1"
+  }
+}
